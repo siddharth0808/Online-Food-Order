@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context=".RegisterActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:fontFamily="cursive"
+            android:text="Canteen"
+            android:textColor="#FCFCFD"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/canteen_name"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/border_back"
+            android:drawableStart="@drawable/ic_org"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Enter canteen name"
+            android:inputType="textPersonName"
+            android:padding="15dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/border_back"
+            android:drawableStart="@drawable/ic_user"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Enter full name"
+            android:inputType="textPersonName"
+            android:padding="15dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="@+id/canteen_name"
+            app:layout_constraintStart_toStartOf="@+id/canteen_name"
+            app:layout_constraintTop_toBottomOf="@+id/canteen_name" />
+
+        <EditText
+            android:id="@+id/user_email"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/border_back"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Enter email id"
+            android:inputType="textEmailAddress"
+            android:padding="15dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="@+id/user_name"
+            app:layout_constraintStart_toStartOf="@+id/user_name"
+            app:layout_constraintTop_toBottomOf="@+id/user_name" />
+
+        <EditText
+            android:id="@+id/user_mobile"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/border_back"
+            android:drawableStart="@drawable/ic_phone"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Enter mobile number"
+            android:inputType="phone"
+            android:padding="15dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textColorLink="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="@+id/user_email"
+            app:layout_constraintStart_toStartOf="@+id/user_email"
+            app:layout_constraintTop_toBottomOf="@+id/user_email" />
+
+        <EditText
+            android:id="@+id/canteen_address"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/border_back"
+            android:drawableStart="@drawable/ic_address"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Enter address"
+            android:inputType="textPersonName"
+            android:padding="15dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="@+id/user_mobile"
+            app:layout_constraintStart_toStartOf="@+id/user_mobile"
+            app:layout_constraintTop_toBottomOf="@+id/user_mobile" />
+
+        <EditText
+            android:id="@+id/user_password"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/border_back"
+            android:drawableStart="@drawable/ic_security"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Enter password"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="@+id/canteen_address"
+            app:layout_constraintStart_toStartOf="@+id/canteen_address"
+            app:layout_constraintTop_toBottomOf="@+id/canteen_address" />
+
+        <EditText
+            android:id="@+id/user_cpassword"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/border_back"
+            android:drawableStart="@drawable/ic_security"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="@+id/user_password"
+            app:layout_constraintStart_toStartOf="@+id/user_password"
+            app:layout_constraintTop_toBottomOf="@+id/user_password" />
+
+        <Button
+            android:id="@+id/Register"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/button_background"
+            android:text="Register"
+            android:textColor="#FFFFFF"
+
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/user_cpassword"
+            app:layout_constraintStart_toStartOf="@+id/user_cpassword"
+            app:layout_constraintTop_toBottomOf="@+id/user_cpassword" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="21dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+            app:tint="#FFFFFF" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
